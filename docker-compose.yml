@@ -13,7 +13,7 @@ services:
 
   wordpress:
     depend_on:
-      -db
+      - db
     image: wordpress:latest
     ports:
       - "80:80"
