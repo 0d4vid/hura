@@ -12,7 +12,7 @@ services:
       - ./db-init:/docker-entrypoint-initdb.d
 
   wordpress:
-    depend_on:
+    depends_on:
       - db
     image: wordpress:latest
     ports:
